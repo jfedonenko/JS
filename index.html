@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>training JS</title>
+  <!-- Responsive -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Main CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="header" id="header">
+  <div class="container">
+    <a href="#" class="logo">
+      <img src="img/logo.svg" alt="logo">
+    </a>
+    <h1>
+      Тренировка Javascript
+    </h1>
+  </div>
+</header>
+<section class="tabs-section" id="tabs-section">
+  <div class="container">
+    <h2>
+      1. Табы
+    </h2>
+    <div class="tabs">
+      <div class="tabs__nav" id="tabs-nav">
+        <button type="button" data-btn="1" class="tabs__btn">Жираф</button>
+        <button type="button" data-btn="2" class="tabs__btn">Олень</button>
+        <button type="button" data-btn="3" class="tabs__btn tabs__btn_active">Козочка</button>
+        <button type="button" data-btn="4" class="tabs__btn">Бурундук</button>
+      </div>
+      <div class="tabs__content" id="tabs-content">
+        <div data-pane="1" class="tabs__pane">
+          <h3>Жираф</h3>
+          <p>Шея у жирафов необычайно длинная, и это несмотря на то, что у них, как и почти у всех других млекопитающих, лишь семь шейных позвонков. Большой рост увеличивает нагрузку на систему кровообращения, прежде всего в отношении кровоснабжения головного мозга. Поэтому сердце у жирафов особенно сильное. Оно пропускает 60 л крови в минуту, весит 12 кг и создаёт давление, которое в три раза выше, чем у человека.</p> 
+          <p>Тем не менее оно не смогло бы вынести перегрузки при резком опускании и поднятии головы жирафа. Чтобы такие движения не приводили к гибели животного, кровь жирафа гуще, чем у человека, и имеет вдвое более высокую плотность кровяных телец. Помимо этого, у жирафа имеются особые запирающие клапаны в большой шейной вене, прерывающие поток крови таким образом, что сохраняется давление в главной артерии, снабжающей мозг.</p>
+        </div>
+        <div data-pane="2" class="tabs__pane">
+          <h3>Олень</h3>
+          <p>Некоторые виды живут поодиночке, однако большинство видов живут в группах, стадах, величина которых варьируется в зависимости от вида и среды обитания.</p>
+          <p>Часто это так называемые гаремные группы, в которых один самец возглавляет группу из нескольких самок и детёнышей, обороняя её от вторжения других соперников-самцов. В брачный период между самцами нередко доходит до поединков за право спаривания.</p>
+        </div>
+        <div data-pane="3" class="tabs__pane tabs__pane_active">
+          <h3>Козочка</h3>
+          <p>Домашняя коза (лат. Capra hircus) — домашнее животное, вид парнокопытных из рода горные козлы (Capra) семейства полорогих.</p>
+          <p>Коза — одно из первых прирученных животных. Одомашнена на Ближнем Востоке, приблизительно 9 тыс. лет назад. Предком домашней козы был дикий безоаровый козёл (Capra hircus aegagrus), до сегодняшнего дня встречающийся от греческих островов в Эгейском море через Малую Азию, Армянское нагорье и Переднюю Азию до Средней Азии.</p>
+        </div>
+        <div data-pane="4" class="tabs__pane">
+          <h3>Бурундук</h3>
+          <p>В зависимости от вида масса бурундука может составлять от 30 до 120 г, а размер — от 5 до 15 см при длине хвоста от 7 до 12 см. Наиболее заметный признак всех видов — пять тёмных полосок вдоль спины, разделённые белыми или серыми полосками. Окраска других участков тела — красно-бурая или серо-бурая. Так как это является общей чертой всех бурундуков, отдельные виды на первый взгляд трудноразличимы.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="modal-section" id="modal-section">
+  <div class="container">
+    <h2>
+      2. Модальное окно
+    </h2>
+    <button type="button" class="modal-button" id="modal-open">
+      Вызвать дождь
+    </button>
+    <div class="modal" id="modal">
+      <div class="modal__overlay" id="modal-overlay"></div>
+      <div class="modal__pane" id="modal-pane">
+        <button type="button" class="modal__close" id="modal-close">
+          Close
+        </button>
+        <h3>
+          Немного о дожде
+        </h3>
+        <p>До́ждь — атмосферные осадки, выпадающие из облаков в виде капель жидкости со средним диаметром от 0,5 до 6—7 мм[1].</p>
+        <p>Осенние дожди. Южная Эстония</p>
+        <p>Летний дождь в Санкт-Петербурге<br>
+        Жидкие осадки с меньшим диаметром капель называются моросью[2]. Капли с диаметром больше 6—7 мм разбиваются в процессе падения из облаков на меньшие капли, поэтому даже при сильнейшем ливне диаметр капель не превышает 6—7 мм. Интенсивность дождя обычно составляет от 0,25 мм/ч (моросящий дождь) до 100 мм/ч (ливень)[1]. В Европе самый сильный ливень с интенсивностью 15,5 мм/мин был зафиксирован в 1920 году в Германии[2].</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slider-section" id="slider-section">
+  <div class="container">
+    <h2>
+      3. Слайдер
+    </h2>
+    <div class="slider-wrapper">
+      <div class="slider">
+        <div class="slider__item slider__item_active">
+          <img src="img/slide1.jpg" alt="clide1">
+        </div>
+        <div class="slider__item">
+          <img src="img/slide2.jpg" alt="clide2">
+        </div>
+        <div class="slider__item">
+          <img src="img/slide3.jpg" alt="clide3">
+        </div>
+        <button type="button" class="slider__btn slider__btn_prev" id="btn-prev"></button>
+        <button type="button" class="slider__btn slider__btn_next" id="btn-next"></button>
+      </div>
+      <ul class="dots">
+        <li class="dots__item dots__item_active"></li>
+        <li class="dots__item"></li>
+        <li class="dots__item"></li>
+      </ul>
+    </div>
+  </div>
+</section>
+<footer class="footer" id="footer">
+  <div class="container">
+    <p>
+      Ну, что поделать, если мне все это удалось! :)
+    </p>
+  </div>
+</footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
